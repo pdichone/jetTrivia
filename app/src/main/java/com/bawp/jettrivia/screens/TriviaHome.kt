@@ -5,8 +5,5 @@ import androidx.hilt.navigation.compose.hiltViewModel
 import com.bawp.jettrivia.component.Questions
 
 @Composable
-fun TriviaHome( viewModel: QuestionsViewModel = hiltViewModel()) {
+fun TriviaHome( viewModel: QuestionsViewModel = hiltViewModel()) = Questions(viewModel)
 
-    Questions(viewModel)
-
-}
